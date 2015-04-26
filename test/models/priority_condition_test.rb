@@ -1,7 +1,13 @@
 require 'test_helper'
 
 class PriorityConditionTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  
+def setup
+	@priorityCondition = PriorityCondition.new(name: "Cancer")
+end
+
+test "should be valid" do
+	assert @priorityCondition.valid?
+end
+
 end
