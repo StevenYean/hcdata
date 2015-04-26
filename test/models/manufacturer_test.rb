@@ -1,7 +1,15 @@
 require 'test_helper'
 
 class ManufacturerTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  
+def setup
+	@manufacturer = Manufacturer.new(name: "The Strike Gold",
+									location: "Kurashiki")
+end
+
+test "should be valid" do
+	assert @manufacturer.valid?
+end
+
+
 end

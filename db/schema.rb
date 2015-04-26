@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150426001521) do
+ActiveRecord::Schema.define(version: 20150426012613) do
 
   create_table "developers", force: true do |t|
     t.integer  "topic_ID"
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20150426001521) do
   end
 
   create_table "priority_conditions", force: true do |t|
-    t.string   "name"
+    t.integer  "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
