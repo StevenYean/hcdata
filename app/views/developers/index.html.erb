@@ -1,0 +1,27 @@
+<h1>Listing developers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Topic id</th>
+      <th>Man id</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @developers.each do |developer| %>
+      <tr>
+        <td><%= developer.topic_ID %></td>
+        <td><%= developer.man_ID %></td>
+        <td><%= link_to 'Show', developer %></td>
+        <td><%= link_to 'Edit', edit_developer_path(developer) %></td>
+        <td><%= link_to 'Destroy', developer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Developer', new_developer_path %>

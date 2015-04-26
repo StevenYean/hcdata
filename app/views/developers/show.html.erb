@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Topic id:</strong>
+  <%= @developer.topic_ID %>
+</p>
+
+<p>
+  <strong>Man id:</strong>
+  <%= @developer.man_ID %>
+</p>
+
+<%= link_to 'Edit', edit_developer_path(@developer) %> |
+<%= link_to 'Back', developers_path %>

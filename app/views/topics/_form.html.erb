@@ -1,0 +1,57 @@
+<%= form_for(@topic) do |f| %>
+  <% if @topic.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@topic.errors.count, "error") %> prohibited this topic from being saved:</h2>
+
+      <ul>
+      <% @topic.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :priorityConditionID %><br>
+    <%= f.number_field :priorityConditionID %>
+  </div>
+  <div class="field">
+    <%= f.label :topicTitle %><br>
+    <%= f.text_field :topicTitle %>
+  </div>
+  <div class="field">
+    <%= f.label :intervention %><br>
+    <%= f.text_field :intervention %>
+  </div>
+  <div class="field">
+    <%= f.label :phase %><br>
+    <%= f.number_field :phase %>
+  </div>
+  <div class="field">
+    <%= f.label :priorityConditionID %><br>
+    <%= f.number_field :priorityConditionID %>
+  </div>
+  <div class="field">
+    <%= f.label :phaseDetails %><br>
+    <%= f.text_field :phaseDetails %>
+  </div>
+  <div class="field">
+    <%= f.label :comparators %><br>
+    <%= f.text_field :comparators %>
+  </div>
+  <div class="field">
+    <%= f.label :healthImpact %><br>
+    <%= f.text_field :healthImpact %>
+  </div>
+  <div class="field">
+    <%= f.label :patientPopulation %><br>
+    <%= f.text_field :patientPopulation %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.text_field :status %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

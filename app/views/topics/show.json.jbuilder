@@ -1,0 +1,1 @@
+json.extract! @topic, :id, :priorityConditionID, :topicTitle, :intervention, :phase, :priorityConditionID, :phaseDetails, :comparators, :healthImpact, :patientPopulation, :status, :created_at, :updated_at

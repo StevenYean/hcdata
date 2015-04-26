@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  priorityConditionID: 1
+  topicTitle: MyString
+  intervention: MyString
+  phase: 1
+  priorityConditionID: 1
+  phaseDetails: MyString
+  comparators: MyString
+  healthImpact: MyString
+  patientPopulation: MyString
+  status: MyString
+
+two:
+  priorityConditionID: 1
+  topicTitle: MyString
+  intervention: MyString
+  phase: 1
+  priorityConditionID: 1
+  phaseDetails: MyString
+  comparators: MyString
+  healthImpact: MyString
+  patientPopulation: MyString
+  status: MyString
